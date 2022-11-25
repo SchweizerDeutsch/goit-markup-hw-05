@@ -79,10 +79,6 @@ body {
   padding-bottom: 32px;
 }
 
-.auth-nav {
-  display: flex;
-}
-
 .social-icon-header {
   display: flex;
   justify-content: center;
@@ -301,6 +297,10 @@ ul {
   justify-content: space-between;
 }
 
+.sphere-pictures-list {
+  width: 370px;
+}
+
 .sphere-title {
   color: var(--title-tex-color);
   font-size: 36px;
@@ -456,7 +456,7 @@ ul {
 }
 
 .clients {
-  padding: 94px 215px;
+  padding: 94px 0px;
 }
 
 .clients-link {
@@ -667,7 +667,13 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.work-portfolio:hover {
+.work-link {
+  display: block;
+  outline: none;
+}
+
+.work-link:focus,
+.work-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -711,6 +717,7 @@ ul {
   border-radius: 4px;
   border: none;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .button-primary:hover,
