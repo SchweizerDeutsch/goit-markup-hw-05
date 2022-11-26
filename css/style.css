@@ -467,6 +467,7 @@ ul {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+  outline: none;
 }
 
 .clients-svg {
@@ -495,8 +496,12 @@ ul {
   display: flex;
 }
 
-.clients-link:hover .clients-svg,
-.clients-link:focus .hover-svg {
+.clientsplink {
+  display: flex;
+}
+
+.clients-link:focus .clients-svg,
+.clients-link:hover .clients-svg {
   fill: var(--accent-color);
 }
 
